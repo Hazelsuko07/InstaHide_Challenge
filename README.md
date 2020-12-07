@@ -21,8 +21,16 @@ If you participate in this challenge or use InstaHide in your research, then ple
 ```
 
 ## Leaderboard
-| Attack  | Submitted by  |  Max_SSIM | Mean_SSIM | Max_L2 | Mean_L2 | Time Complexity | Self-Reported Running Time |Submission Date  |
+| Attack   |  Max_SSIM | Mean_SSIM | Min_L2 | Mean_L2 | Time Complexity | Self-Reported Running Time |Submission Date  |
 |---|---|---|---| ---| --- | --- | --- | --- |
+|[Carlini et al.](https://arxiv.org/abs/2011.05315) ver.1\*|0.90|0.43| 0.01| 0.31 | O(E^3) | 2 GPU hours + 2 CPU hours (10 GPU hours for a preparation step) | 20/12/04 |
+|[Carlini et al.](https://arxiv.org/abs/2011.05315) ver.2|0.79|0.37| 0.05| 0.42 | O(E^3) | 2 GPU hours + 2 CPU hours (10 GPU hours for a preparation step) | 20/12/04 |
+|[PRNG Attack\**](https://arxiv.org/abs/2011.05315)|0.98|0.47| 0.00| 0.27 | O(max(E,d)^3) | 120 CPU hours | 20/11/10 |
+
+E is the  number of encryptions (5000 in the current challenge).
+
+\* The final processing step will be described in an upcoming paper.
+\** This attack exploits an implementation bug of the challenge set, which is not fundamental to the InstaHide approach.
 
 ## Format and Rules
 
